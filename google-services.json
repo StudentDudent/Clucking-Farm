@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "62508067130",
+    "project_id": "cluckingfarm-a34b7",
+    "storage_bucket": "cluckingfarm-a34b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62508067130:android:9b7da775195ba9d3724803",
+        "android_client_info": {
+          "package_name": "sg.edu.np.mad.mad_team5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62508067130-h5q9vth87mq0k1ov4r9f2d3bcr8n32n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6mX9hZeA32O4WLcl2J3rnXFQtlKsgFxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62508067130-h5q9vth87mq0k1ov4r9f2d3bcr8n32n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
