@@ -38,16 +38,11 @@
   <ProgressBar
       android:id="@+id/progressBar"
       android:layout_below="@+id/imagefarm"
-      style="?android:attr/progressBarStyleHorizontal"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginStart="53dp"
-      android:layout_marginEnd="47dp"
-      android:layout_marginBottom="295dp"
-      android:progressTint="#AE3609" />
+      android:max="100"
+      android:progress="50"
+      style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+      android:background="4F3130"/> />
 
 </RelativeLayout>
