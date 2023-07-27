@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211569082876",
+    "project_id": "mad-clucking-login",
+    "storage_bucket": "mad-clucking-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211569082876:android:d38c780ab45238577ef279",
+        "android_client_info": {
+          "package_name": "sg.edu.np.mad.clucking_farm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211569082876-2jtd8l670fe3oc3aa3tpjvg86l758sie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5cwKaEF2SxpZEsg6OZb4rMiyGGHEekPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211569082876-2jtd8l670fe3oc3aa3tpjvg86l758sie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

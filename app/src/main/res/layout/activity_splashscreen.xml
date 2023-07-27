@@ -7,47 +7,41 @@
     android:background="@drawable/clucking_farm"
     tools:context=".splashscreen">
 
+    <ImageView
+        android:id="@+id/titlefarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/title_farm"
+        android:contentDescription="texttitle"/>
 
-  <ImageView
-      android:id="@+id/titlefarm"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginStart="20dp"
-      android:layout_marginLeft="20dp"
-      android:layout_marginTop="150dp"
-      android:layout_marginEnd="20dp"
-      android:layout_marginRight="20dp"
-      android:layout_marginBottom="20dp"
-      app:srcCompat="@drawable/title_farm"
-      android:contentDescription="texttitle"/>
+    <ImageView
+        android:id="@+id/imagefarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlefarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/image_farm"
+        android:contentDescription="imagechicken"/>
 
-  <ImageView
-      android:id="@+id/imagefarm"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/titlefarm"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="-30dp"
-      android:layout_marginLeft="20dp"
-      android:layout_marginRight="20dp"
-      app:srcCompat="@drawable/image_farm"
-      android:contentDescription="imagechicken"/>
-
-  <ProgressBar
-      android:id="@+id/progressBar"
-      android:layout_below="@+id/imagefarm"
-      style="?android:attr/progressBarStyleHorizontal"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginStart="53dp"
-      android:layout_marginEnd="47dp"
-      android:layout_marginBottom="295dp"
-      android:progressTint="#AE3609" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/imagefarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:background="#FFBA4B"/>
 
 </RelativeLayout>
