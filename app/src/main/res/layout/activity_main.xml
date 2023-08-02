@@ -10,10 +10,11 @@
 
     <ImageView
         android:id="@+id/countdown_image"
-        android:layout_width="252dp"
-        android:layout_height="307dp"
+        android:layout_width="146dp"
+        android:layout_height="167dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="200dp"
         app:srcCompat="@drawable/countdown_image" />
 
     <TextView
@@ -27,6 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
 
+
     <Button
         android:id="@+id/countdown_button"
         android:layout_width="wrap_content"
@@ -37,8 +39,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#00C32A"
-        android:text="Start"
-        android:textColor="@color/black"/>
+        android:background="#005212"
+        android:text="@string/start"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"/>
 
 </RelativeLayout>
