@@ -25,11 +25,18 @@ public class MainActivity extends AppCompatActivity {
 
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
     private long mEndTime;
+    private TextView userNameTV;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        String name = getIntent().getStringExtra("username");
+
+        userNameTV.setText(name);
 
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
 

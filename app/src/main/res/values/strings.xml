@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Clucking_Farm</string>
     <string name="start">Start</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <string name="back4app_app_id">8XlPbDVNws55nuvgk74Z5PHJE4ipQlk8X0levfXi
+</string>
+    <string name="back4app_client_key">aOKUP99zt4FFA30fwVyGcADImGkDDsqjNxmjEjSt</string>
 </resources>

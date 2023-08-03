@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clucking_Farm"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,5 +26,18 @@
             </intent-filter>
         </activity>
     </application>
+    <meta-data
+        android:name="com.parse.SERVER_URL"
+        android:value="@string/back4app_server_url" />
+
+    <!--Meta data for your file for application id-->
+    <meta-data
+        android:name="com.parse.APPLICATION_ID"
+        android:value="@string/back4app_app_id" />
+
+    <!--Meta data for your file for client key-->
+    <meta-data
+        android:name="com.parse.CLIENT_KEY"
+        android:value="@string/back4app_client_key" />
 
 </manifest>
