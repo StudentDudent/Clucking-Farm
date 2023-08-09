@@ -9,17 +9,16 @@ import android.widget.ProgressBar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class splashscreen extends AppCompatActivity {
+public class Splashscreen extends AppCompatActivity {
 
     ProgressBar pb;
     int counter = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent secondActivityIntent = new Intent(
-                this, MainActivity.class
-        );
-        startActivity(secondActivityIntent);
+        Intent intent = new Intent(this, Splashscreen.class);
+        startActivity(intent);
+        finish();
 
         setContentView(R.layout.activity_splashscreen);
         progressbar();

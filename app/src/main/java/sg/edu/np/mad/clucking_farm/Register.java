@@ -18,7 +18,7 @@ import com.parse.SignUpCallback;
 
 
 
-public class register extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     // creating variables for our edit text and buttons.
     private EditText userNameEdt, passwordEdt;
@@ -28,12 +28,12 @@ public class register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
 
         // initializing our edit text and buttons.
         userNameEdt = findViewById(R.id.idEdtUserName);
         passwordEdt = findViewById(R.id.idEdtPassword);
-        registerBtn = findViewById(R.id.idBtnRegister);
+        registerBtn = (Button)findViewById(R.id.idBtnRegister);
 
         // adding on click listener for our button.
         registerBtn.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +46,7 @@ public class register extends AppCompatActivity {
 
                 // checking if the entered text is empty or not.
                 if (TextUtils.isEmpty(userName) && TextUtils.isEmpty(password)) {
-                    Toast.makeText(register.this, "Please enter user name and password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Please enter user name and password", Toast.LENGTH_SHORT).show();
                 }
 
                 // calling a method to register a user.
@@ -70,15 +70,15 @@ public class register extends AppCompatActivity {
                 if (e == null) {
                     // if the error is null we are displaying a toast message and
                     // redirecting our user to new activity and passing the user name.
-                    Toast.makeText(register.this, "User Registered successfully", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(register.this, MainActivity.class);
+                    Toast.makeText(Register.this, "User Registered successfully", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(Register.this, CluckTimer.class);
                     i.putExtra("username", userName);
                     startActivity(i);
                 } else {
                     // if we get any error then we are logging out
                     // our user and displaying an error message
                     ParseUser.logOut();
-                    Toast.makeText(register.this, "Fail to Register User..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Fail to Register User..", Toast.LENGTH_SHORT).show();
                 }
             }
         });
